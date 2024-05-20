@@ -20,7 +20,7 @@
                     <li>
                         <a href="#">Segitiga</a>
                         <ul>
-                            <li><a href="#">Luas Segitiga</a></li>
+                            <li><a href="index.html">Luas Segitiga</a></li>
                             <li><a href="#">Keliling Segitiga</a></li>
                         </ul>
                     </li>
@@ -29,15 +29,32 @@
             </nav>
         </div>
         <section>
-            <h2>Luas Segitiga</h2>
+            <h2>Hitung Luas Segitiga</h2>
+            <img src="https://img.okezone.com/okz/500/content/2023/12/07/624/2934721/kumpulan-rumus-segitiga-dalam-matematika-mudah-IezLAzC9Fs.jpg">
             <form>
                 <label for="alas">Panjang Alas (a):</label>
-                <input type="number" id="alas">
+                <input type="number" id="alas" placeholder="nilai alas">
                 <label for="tinggi">Tinggi (t):</label>
-                <input type="number" id="tinggi">
-                <button type="submit" class="btn btn-primary" id="hitung">Hitung Luas Segitiga</button>
+                <input type="number" id="tinggi" placeholder="nilai tinggi">
+                <button type="submit" class="btn btn-primary" id="hitung">Hitung</button>
                 <button type="reset" class="btn btn-danger" id="reset">Reset</button>
                 <p id="result"></p>
+            </form>
+        </section>
+        
+        <section>
+            <h2>Hitung Keliling Segitiga</h2>
+            <img src="https://aura-ilmu.com/global/wp-content/uploads/sites/2/2020/11/k-segitiga.jpg.webp">
+            <form>
+                <label for="a">Sisi A:</label>
+                <input type="number" id="a" placeholder="nilai A">
+                <label for="b">Sisi B:</label>
+                <input type="number" id="b" placeholder="nilai B">
+                <label for="c">Sisi C:</label>
+                <input type="number" id="c" placeholder="nilai C">
+                <button type="submit" class="btn btn-primary" id="hitungkel">Hitung</button>
+                <button type="reset" class="btn btn-danger" id="reset">Reset</button>
+                <p id="hasil"></p>
             </form>
         </section>
     </main>

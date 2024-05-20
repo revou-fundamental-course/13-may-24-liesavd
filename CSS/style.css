@@ -21,27 +21,77 @@ main {
     padding: 20px;
 }
 
-section {
+div.navbar {
     background-color: #fff;
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    display: block;
+    unicode-bidi: isolate;
+    background-color: #fff;
+    padding: 70px;
+    margin-bottom: 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1, h2 {
     margin-top: 0;
+    justify-content: center;
 }
 
 /* CSS Dropdown */
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+nav {
+    background-color: #137bcf;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
 }
 
-li {
-    margin-bottom: 10px;
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav ul li ul {
+    background-color: #333;
+    border: 1px solid #fff;
+    display: none;
+    left: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+
+nav ul li ul li {
+    width: 100%;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul li:hover > a {
+    background-color: #555;
+}
+
 
 label {
     display: block;
@@ -54,8 +104,8 @@ input[type="number"] {
     margin-bottom: 20px;
 }
 
-button[type="button"] {
-    background-color: #4CAF50;
+button[type="submit"] {
+    background-color: #0b6ceb;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -63,8 +113,12 @@ button[type="button"] {
     cursor: pointer;
 }
 
-button[type="button"]:hover {
-    background-color: #3e8e41;
+button[type="reset"] {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 #result {

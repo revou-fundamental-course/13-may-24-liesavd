@@ -4,20 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
     <header>
         <h1>Welcome to Katik</h1>
         <p>Hai Sobat, Selamat datang di Katik:</p>
+        <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
     </header>
     <main>
         <section>
-            <h2>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</h2>
-            <ul>
-                <li>Segitiga</li>
+            <ol>
+                <li>Segitiga
+                    <ul>
+                        <li>Luas Segitiga</li>
+                        <li>keliling Segitiga</li>
+                    </ul>
+                </li>
                 <li>Jajar Genjang</li>
-            </ul>
+            </ol>
+        </section>
+        <section>
+            <h2>Luas Segitiga</h2>
+            <form>
+                <label for="alas">Panjang Alas (a):</label>
+                <input type="number" id="alas">
+                <label for="tinggi">Tinggi (t):</label>
+                <input type="number" id="tinggi">
+                <button id="hitung">Hitung Luas Segitiga</button>
+                <p id="result"></p>
+            </form>
         </section>
     </main>
+    <script src="js/script.js"></script>
 </body>
 </html>

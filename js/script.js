@@ -21,7 +21,9 @@ const hitungkelButton = document.getElementById('hitungkel');
 const resultElement = document.getElementById('result');
 const hasilElement = document.getElementById('hasil');
 const formulaElement = document.getElementById('rumus');
+const formulakelElement = document.getElementById('rumuskel');
 const asalElement = document.getElementById('asal');
+const asalkelElement = document.getElementById('asalkel');
 const resetButton = document.getElementById('reset');
 const rbButton = document.getElementById('reset_btn');
 
@@ -42,6 +44,8 @@ hitungkelButton.addEventListener('click', (e) => {
     const b = parseInt(bInput.value);
     const c = parseInt(cInput.value);
     const keliling = a + b + c;
+    formulakelElement.textContent = 'K = a + b + c'
+    asalkelElement.textContent = `K = ${a} + ${b} + ${c}`
     hasilElement.textContent = `Keliling Segitiga = ${keliling}`;
 });
 

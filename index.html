@@ -21,14 +21,14 @@
                         <a href="#">Segitiga</a>
                         <ul>
                             <li><a href="index.html">Luas Segitiga</a></li>
-                            <li><a href="#">Keliling Segitiga</a></li>
+                            <li><a href="#" onclick="hideorShow()";>Keliling Segitiga</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Jajar Genjang</a></li>
                 </ul>
             </nav>
         </div>
-        <section>
+        <section id="hitung_luas" style="display: block;">
             <h2>Hitung Luas Segitiga</h2>
             <img src="https://img.okezone.com/okz/500/content/2023/12/07/624/2934721/kumpulan-rumus-segitiga-dalam-matematika-mudah-IezLAzC9Fs.jpg" alt="Rumus Luas Segitiga">
             <form>
@@ -36,13 +36,15 @@
                 <input type="number" id="alas" placeholder="nilai alas">
                 <label for="tinggi">Tinggi (t):</label>
                 <input type="number" id="tinggi" placeholder="nilai tinggi">
+                <p id="rumus"></p>
+                <p id="asal"></p>
+                <p id="result"></p>
                 <button type="submit" class="btn btn-primary" id="hitung">Hitung</button>
                 <button type="reset" class="btn btn-danger" id="reset">Reset</button>
-                <p id="result"></p>
             </form>
         </section>
         
-        <section>
+        <section id="hitung_keliling" style="display: none;">
             <h2>Hitung Keliling Segitiga</h2>
             <img src="https://aura-ilmu.com/global/wp-content/uploads/sites/2/2020/11/k-segitiga.jpg.webp" alt="Rumus Keliling Segitiga">
             <form>
@@ -53,7 +55,7 @@
                 <label for="c">Sisi C:</label>
                 <input type="number" id="c" placeholder="nilai C">
                 <button type="submit" class="btn btn-primary" id="hitungkel">Hitung</button>
-                <button type="reset" class="btn btn-danger" id="reset">Reset</button>
+                <button type="reset_btn" class="btn btn-danger" id="reset_btn">Reset</button>
                 <p id="hasil"></p>
             </form>
         </section>
